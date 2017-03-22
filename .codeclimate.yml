@@ -1,0 +1,24 @@
+engines:
+  checkstyle:
+    enabled: true
+    channel: "beta"
+  duplication:
+    enabled: true
+    config:
+      languages:
+        javascript:
+  csslint:
+    enabled: true
+
+ratings:
+  paths:
+  - "**/*.java"
+  - "**/*.js"
+  - "**/*.css"
+
+exclude_paths:
+  - "**/node_modules/**/*"
+  - "CalOrdersJET/bower_components/**/*"
+  - "CalOrdersJET/src/js/libs/**/*"
+  - "CalOrdersJET/src/themes/**/*"
+  - "CalOrdersSwaggerUI/**/*"
